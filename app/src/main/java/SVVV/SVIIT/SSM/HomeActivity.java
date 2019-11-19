@@ -1,8 +1,10 @@
 package SVVV.SVIIT.SSM;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,6 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class HomeActivity extends AppCompatActivity {
 
+    private Button button,button1;
     private static final String TAG = "mytag";
     private static final String CAMERA_UNAVAILABLE_ERROR = "Camera Unavailable at the moment, Please try again.";
     private Button start_shopping;
@@ -36,9 +39,33 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,Scanner.class));
             }
         });
-        
-    }
 
+        button1=findViewById(R.id.button4);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(HomeActivity.this,VirtualCart.class);
+                startActivity(intent);
+            }
+        });
+        button=findViewById(R.id.button3);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new AlertDialog.Builder(HomeActivity.this)
+                        .setMessage("Do you want to exit")
+                        .setCancelable(true)
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                HomeActivity.super.onBackPressed();
+                                finish();
+                            }
+                        })
+                        .setNegativeButton("No", null)
+                        .show();
+            }
+        });
+    }
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
@@ -58,6 +85,7 @@ public class HomeActivity extends AppCompatActivity {
             Log.d(TAG, "onOptionsItemSelected: Map");
         }
         return super.onOptionsItemSelected(item);
+
     }
 
     @Override
