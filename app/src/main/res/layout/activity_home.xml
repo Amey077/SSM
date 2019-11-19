@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
-    android:background="@drawable/android1">
+    android:background="@drawable/android">
 
     <Button
         android:id="@+id/start_shopping"
-        android:layout_width="143dp"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
         android:background="@drawable/rounded_button"
         android:text="@string/start_shopping"
-        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+        android:textColor="@color/btcolor" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/btcolor"
+        android:text="@string/view_cart" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="420dp"
+        android:textColor="@color/btcolor"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:text="@string/exit" />
+
 </RelativeLayout>

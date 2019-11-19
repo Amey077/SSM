@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rl"
     android:layout_width="match_parent"
@@ -8,6 +7,7 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".VirtualCart"
+    android:background="@drawable/android"
     android:weightSum="100">
 
     <ListView
@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:layout_weight="90"></ListView>
+        android:layout_weight="90" />
 
     <LinearLayout
         android:id="@+id/ll1"
@@ -31,7 +31,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="5"
-            android:text="total=0 Rs"
+            android:text="@string/total_0_rs"
             android:gravity="center"
             android:textSize="20sp"/>
 
@@ -40,7 +40,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="5"
-            android:text="DONE"
+            android:text="@string/done"
             android:textSize="20sp"/>
     </LinearLayout>
 
