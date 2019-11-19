@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/logout"
+        android:enabled="true"
+        android:icon="@drawable/sign_out_white"
+        android:title="logout"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/history"
+        android:checkable="false"
+        android:enabled="true"
+        android:title="History"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map"
+        android:checkable="false"
+        android:enabled="true"
+        android:title="Map"
+        android:visible="true"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/cart"
+        android:checkable="false"
+        android:enabled="true"
+        android:title="My Cart"
+        android:visible="true"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:weightSum="10"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/item_sno"
+        android:layout_weight="1"
+        android:layout_height="70dp"
+        android:layout_width="0dp"
+        android:textSize="40sp"
+        android:text="1"/>
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_weight="2"
+        android:layout_height="70dp"
+        android:layout_width="0dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"/>
+
+    <TextView
+        android:id="@+id/item_details"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="6"
+        android:text="TextView"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/item_delete"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="70dp"
+        android:focusableInTouchMode="true"/>
+</LinearLayout>

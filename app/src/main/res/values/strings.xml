@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SSM</string>
+    <string name="already_have_an_account_n_t_then_click_here"><u>Already have an account? \n then click here</u></string>
+    <string name="don_t_have_any_account_n_create_new_account"><u>Don\'t have any account?  \n Create New Account</u></string>
+    <string name="show_this_barcode_and_collect_your_bill">Show this BarCode and Collect your bill</string>
+    <string name="thanx_for_using_have_a_great_day_d">Thanx for using.. Have a great day :D</string>
+    <string name="todo">TODO</string>
+    <string name="start_shopping">START SHOPPING</string>
+    <string name="log_in">LOG IN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="submit">Submit</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+</resources>

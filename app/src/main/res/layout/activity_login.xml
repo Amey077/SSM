@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/android1">
+
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password"
+        android:background="@drawable/square_button"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
+        tools:targetApi="o"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/square_button"
+        android:hint="@string/password" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password"
+        android:textColor="@color/btcolor"
+        android:background="@drawable/rounded_button"
+        android:layout_margin="20dp"
+        android:text="@string/log_in"/>
+    <TextView
+        android:id="@+id/goto_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/don_t_have_any_account_n_create_new_account"
+        android:clickable="true"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorAccent"
+        android:focusable="true" />
+
+</RelativeLayout>

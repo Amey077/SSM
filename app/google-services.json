@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "738534083960",
+    "firebase_url": "https://smart-shopping-manager-c8fab.firebaseio.com",
+    "project_id": "smart-shopping-manager-c8fab",
+    "storage_bucket": "smart-shopping-manager-c8fab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738534083960:android:cd651417acb49c6b774c8d",
+        "android_client_info": {
+          "package_name": "SVVV.SVIIT.SSM"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738534083960-lqso9vvb7vu6nisibmvfocu96fk5nn57.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "SVVV.SVIIT.SSM",
+            "certificate_hash": "4cda4d66e80b48598302b60065492546af0939fd"
+          }
+        },
+        {
+          "client_id": "738534083960-eqd2mb19udithm1g4m59o72ckc3ustva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAehacTc1_N2yED3hiR3BzqyPTU_0k-bVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738534083960-eqd2mb19udithm1g4m59o72ckc3ustva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
