@@ -32,6 +32,7 @@
             android:layout_height="match_parent"
             android:layout_weight="5"
             android:text="@string/total_0_rs"
+            android:textColor="@color/common_google_signin_btn_text_dark"
             android:gravity="center"
             android:textSize="20sp"/>
 

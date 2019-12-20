@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -52,18 +53,20 @@ public class HomeActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new AlertDialog.Builder(HomeActivity.this)
-                        .setMessage("Do you want to exit")
+              AlertDialog dialog =  new AlertDialog.Builder(HomeActivity.this)
+                        .setMessage(Html.fromHtml("<font color='#00000'>Do you want to exit</font>"))
                         .setCancelable(true)
-                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                        .setPositiveButton(Html.fromHtml("<font color='#00000'>Yes</font>"), new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 HomeActivity.super.onBackPressed();
                                 finish();
                             }
                         })
-                        .setNegativeButton("No", null)
-                        .show();
+                        .setNegativeButton(Html.fromHtml("<font color='#00000'>No</font>"), null)
+                      .show();
+
             }
+
         });
     }
     @Override
@@ -83,6 +86,7 @@ public class HomeActivity extends AppCompatActivity {
         if(id == R.id.map)
         {
             Log.d(TAG, "onOptionsItemSelected: Map");
+            startActivity(new Intent(HomeActivity.this,MapActivity.class));
         }
         return super.onOptionsItemSelected(item);
 
